@@ -3,7 +3,7 @@
 ## Week 1
 
 - [x] Day 01 - Execution Context
-- [ ] Day 02 - Functions
+- [x] Day 02 - Functions
 - [ ] Day 03 - Prototype
 - [ ] Day 04 - Async JS
 - [ ] Day 05 - Event Loop
@@ -15,3 +15,4 @@
 Current Streak
 
 🔥 1 Day
+🔥 2 Day

@@ -11,6 +11,6 @@ Frontend Interview Preparation
 Progress
 
 Day 01 ✅
-Day 02 ⬜
+Day 02 ✅
 Day 03 ⬜
 ...

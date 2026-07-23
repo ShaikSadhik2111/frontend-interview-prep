@@ -17,3 +17,4 @@ console.log(isEvenArrow(5)); // false
 const isEvenExpression = num => num % 2 === 0;
 console.log(isEvenExpression(4)); // true
 console.log(isEvenExpression(5)); // false
+

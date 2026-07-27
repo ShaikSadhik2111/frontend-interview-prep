@@ -4,7 +4,7 @@
 
 - [x] Day 01 - Execution Context
 - [x] Day 02 - Functions
-- [ ] Day 03 - Prototype
+- [x] Day 03 - Prototype
 - [ ] Day 04 - Async JS
 - [ ] Day 05 - Event Loop
 - [ ] Day 06 - Array Methods
@@ -16,3 +16,4 @@ Current Streak
 
 🔥 1 Day
 🔥 2 Day
+🔥 3 Day

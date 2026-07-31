@@ -6,7 +6,7 @@
 - [x] Day 02 - Functions
 - [x] Day 03 - Prototype
 - [x] Day 04 - Async JS
-- [ ] Day 05 - Event Loop
+- [x] Day 05 - Event Loop
 - [ ] Day 06 - Array Methods
 - [ ] Day 07 - Revision
 
@@ -18,3 +18,4 @@ Current Streak
 🔥 2 Day
 🔥 3 Day
 🔥 4 Day
+🔥 5 Day

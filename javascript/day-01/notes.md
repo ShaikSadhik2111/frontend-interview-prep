@@ -1,5 +1,3 @@
-Don't binge-watch the whole series. Watch only the episodes that match today's plan.
-
 what is engine?
 
 Runtime diagram:
@@ -54,6 +52,11 @@ Runtime diagram:
 │              │                 │            to call stack               │
 │              └─────────────────┘                                        │
 └─────────────────────────────────────────────────────────────────────────┘
+
+we have generally 3 types of engines,
+V8 for chrome, edge, opera, brave
+spidermoneky buily by Mozilla 
+js nitro build by apple for safari
 
 def:
 JavaScript engines are interpreters that parse and execute JavaScript code. Modern JavaScript engines use just-in-time (JIT) compilation to convert JavaScript code into machine code that can be executed by a computer's processor. A JavaScript engine is typically developed and used in web browsers to run client-side code but can also be used in server-side environments like Node.js.

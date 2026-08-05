@@ -16,4 +16,5 @@ Day 03 ✅
 Day 04 ✅
 Day 05 ✅
 Day 06 ✅
+Day 07 ✅
 ...

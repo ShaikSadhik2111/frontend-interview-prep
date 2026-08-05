@@ -1,8 +1,3 @@
-Here are your notes perfectly structured and formatted into a Markdown file. I have organized the duplicate definitions (like Higher-Order Functions) into a single, clean section to make studying easier.
-
-Just like before, simply click **"Copy code"** in the top right corner of the box below and paste it directly into your `.md` file for Git.
-
-```markdown
 # JavaScript Functions: In-Depth Guide
 
 ## 1. What is a Function?

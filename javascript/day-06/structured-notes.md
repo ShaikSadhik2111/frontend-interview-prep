@@ -1,6 +1,3 @@
-```python
-markdown_content = """# JavaScript Array Methods & Polyfills
-
 ## 1. Choosing the Right Method
 
 The most common struggle with Array methods is simply knowing which one to use. Here is a quick reference guide:

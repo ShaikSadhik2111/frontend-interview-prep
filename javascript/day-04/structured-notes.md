@@ -1,8 +1,3 @@
-Here are your notes perfectly structured and formatted into a Markdown file. I have organized the concepts logically and fixed a small duplicate code block in your raw notes (under "change the prototype") to make sure it accurately shows `Object.setPrototypeOf()`.
-
-Click **"Copy code"** in the top right corner of the box below to grab the perfectly formatted text for your Git repository.
-
-```markdown
 # JavaScript Objects & Prototypes: In-Depth Guide
 
 ## 1. Objects & The Prototype Chain

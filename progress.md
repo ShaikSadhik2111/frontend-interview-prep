@@ -1,23 +1,74 @@
- # Frontend Interview Progress
+# Progress Tracker
 
-## Week 1
+## Week 1 - JavaScript Foundation ✅
 
-- [x] Day 01 - Execution Context
-- [x] Day 02 - Functions
-- [x] Day 03 - Prototype
-- [x] Day 04 - Async JS
-- [x] Day 05 - Event Loop
-- [x] Day 06 - Array Methods
-- [x] Day 07 - Revision
+- [x] Day 01
+- [x] Day 02
+- [x] Day 03
+- [x] Day 04
+- [x] Day 05
+- [x] Day 06
+- [x] Day 07
 
 ---
 
-Current Streak
+## Week 2 - JavaScript Mastery 🚀
 
-🔥 1 Day
-🔥 2 Day
-🔥 3 Day
-🔥 4 Day
-🔥 5 Day
-🔥 6 Day
-🔥 7 Day
+- [ ] Day 08 - Debounce, Throttle, Currying, Memoization
+- [ ] Day 09 - Deep Copy, Shallow Copy, Object Methods
+- [ ] Day 10 - Advanced Polyfills
+- [ ] Day 11 - JavaScript Coding Round
+- [ ] Day 12 - Machine Coding
+- [ ] Day 13 - Mock Interview
+- [ ] Day 14 - Final JavaScript Assessment
+
+---
+
+## Week 3
+
+- [ ] TypeScript
+
+## Week 4
+
+- [ ] React Core
+
+## Week 5
+
+- [ ] React Advanced
+
+## Week 6
+
+- [ ] HTML
+- [ ] CSS
+- [ ] SCSS
+- [ ] Tailwind CSS
+- [ ] Bootstrap
+- [ ] Responsive Design
+
+## Week 7
+
+- [ ] Browser Internals
+
+## Week 8
+
+- [ ] Machine Coding
+
+## Week 9
+
+- [ ] Frontend System Design
+
+## Week 10
+
+- [ ] Production Projects
+
+## Week 11
+
+- [ ] Resume
+
+- [ ] GitHub Portfolio
+
+- [ ] Mock Interviews
+
+## Week 12
+
+- [ ] Apply Product Companies

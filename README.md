@@ -1,20 +1,81 @@
-Frontend Interview Preparation
+# 🚀 Frontend Interview Preparation Journey
 
-✔ JavaScript
-⬜ TypeScript
-⬜ React
-⬜ Browser Internals
-⬜ Machine Coding
-⬜ System Design
-⬜ DSA
+## Goal
 
-Progress
+Become a Frontend Engineer in a Product-Based Company (Target: 20+ LPA)
 
-Day 01 ✅
-Day 02 ✅
-Day 03 ✅
-Day 04 ✅
-Day 05 ✅
-Day 06 ✅
-Day 07 ✅
-...
+---
+
+## Roadmap
+
+✅ JavaScript Foundation
+
+🚀 JavaScript Mastery
+
+⏳ TypeScript
+
+⏳ React
+
+⏳ HTML / CSS / SCSS / Tailwind / Bootstrap
+
+⏳ Browser Internals
+
+⏳ Machine Coding
+
+⏳ Frontend System Design
+
+⏳ Production Projects
+
+⏳ Resume & Mock Interviews
+
+---
+
+## Repository Structure
+
+📂 javascript
+
+📂 typescript
+
+📂 react
+
+📂 browser-internals
+
+📂 machine-coding
+
+📂 frontend-system-design
+
+📂 projects
+
+---
+
+## Current Progress
+
+Week 1 ✅ Completed
+
+Week 2 🚀 In Progress
+
+---
+
+## Tech Stack
+
+JavaScript
+
+TypeScript
+
+React
+
+HTML
+
+CSS
+
+SCSS
+
+Tailwind CSS
+
+Bootstrap
+
+Docker
+
+Azure
+
+GitHub Actions

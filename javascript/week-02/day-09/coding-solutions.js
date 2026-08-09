@@ -100,14 +100,10 @@ console.log("Copied Object:", copiedObject); // Output: { name: "A", age: 25 }
 
 
 //problem 6 deep clone challenge
-//impelment a basic recursive deepClone(value)
-//start with primitives, arrays, plain objects
-
 // Limitation:
 // Supports primitives, arrays and plain objects.
 // Does not handle circular references, Date, Map, Set,
 // functions, or custom prototypes.
-
 function deepClone(value) {
     // STEP 1: Handle primitives (string, number, boolean, null, undefined)
     // These are NOT objects, so just return them directly - no cloning needed
@@ -126,7 +122,7 @@ function deepClone(value) {
     // Create a new empty object, then recursively clone each property
     const clonedObj = {};
     for (const key in value) {
-        if (value.hasOwnProperty(key)) {
+        if (Object.hasOwn(obj, key)) {
             // Recursively clone the value of each key
             // This handles nested objects and arrays inside objects
             clonedObj[key] = deepClone(value[key]);

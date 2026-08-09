@@ -4,15 +4,20 @@
 
 ## 1. What is the difference between value and reference?
 
-**Primitives** (string, number, boolean, null, undefined) are stored by **value**.
+**Primitives** (string, number, boolean, null, undefined)
+- Objects are values, and the value held by a variable is a reference
+to the object.
+- JavaScript is pass-by-value.
+- When an object is assigned to another variable, the reference value
+is copied, so both variables can refer to the same object.
 - Variable holds the actual data
 - Copying a primitive creates a completely independent copy
 
 **Objects** (objects, arrays, functions) 
-JavaScript is pass-by-value.
-For objects, the value held by a variable is a reference
+- JavaScript is pass-by-value.
+- For objects, the value held by a variable is a reference
 to the object.
-Therefore, when we assign one object variable to another,
+- Therefore, when we assign one object variable to another,
 both variables can hold references to the same object.
 - Variable holds a memory address (pointer) to where data lives
 - Copying an object copies the address, NOT the data — both variables point to same object

@@ -8,9 +8,21 @@
 - Variable holds the actual data
 - Copying a primitive creates a completely independent copy
 
-**Objects** (objects, arrays, functions) are stored by **reference**.
+**Objects** (objects, arrays, functions) 
+JavaScript is pass-by-value.
+For objects, the value held by a variable is a reference
+to the object.
+Therefore, when we assign one object variable to another,
+both variables can hold references to the same object.
 - Variable holds a memory address (pointer) to where data lives
 - Copying an object copies the address, NOT the data — both variables point to same object
+const user1 = { name: "A" };
+
+const user2 = user1;
+
+user2.name = "B";
+
+console.log(user1.name); // "B"
 
 ```javascript
 // Value (primitive)

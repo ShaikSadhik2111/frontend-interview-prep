@@ -122,8 +122,7 @@ function deepClone(value) {
     // Create a new empty object, then recursively clone each property
     const clonedObj = {};
     for (const key in value) {
-        if (Object.hasOwn(obj, key)) {
-            // Recursively clone the value of each key
+             if (Object.hasOwn(value, key)) {            // Recursively clone the value of each key
             // This handles nested objects and arrays inside objects
             clonedObj[key] = deepClone(value[key]);
         }

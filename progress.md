@@ -10,7 +10,7 @@
 - [x] Day 06
 - [x] Day 07
 - [x] Day 08
-
+- [x] Day 09
 ---
 
 ## Week 2 - JavaScript Mastery 🚀

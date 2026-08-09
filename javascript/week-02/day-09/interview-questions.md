@@ -4,44 +4,22 @@
 
 ## 1. What is the difference between value and reference?
 
-**Primitives** (string, number, boolean, null, undefined)
-- Objects are values, and the value held by a variable is a reference
+JavaScript is pass-by-value.
+
+For objects, the value held by a variable is a reference
 to the object.
-- JavaScript is pass-by-value.
-- When an object is assigned to another variable, the reference value
-is copied, so both variables can refer to the same object.
-- Variable holds the actual data
-- Copying a primitive creates a completely independent copy
 
-**Objects** (objects, arrays, functions) 
-- JavaScript is pass-by-value.
-- For objects, the value held by a variable is a reference
-to the object.
-- Therefore, when we assign one object variable to another,
-both variables can hold references to the same object.
-- Variable holds a memory address (pointer) to where data lives
-- Copying an object copies the address, NOT the data — both variables point to same object
-const user1 = { name: "A" };
+When an object is assigned to another variable, the reference
+value is copied, so both variables can refer to the same object.
 
-const user2 = user1;
+Example:
 
-user2.name = "B";
+const obj1 = { name: "Alice" };
+const obj2 = obj1;
 
-console.log(user1.name); // "B"
-
-```javascript
-// Value (primitive)
-let a = 10;
-let b = a;       // b gets a copy of 10
-b = 99;
-console.log(a);  // 10 — unchanged, completely independent
-
-// Reference (object)
-let obj1 = { name: "Alice" };
-let obj2 = obj1;       // obj2 gets the same memory address
 obj2.name = "Bob";
-console.log(obj1.name); // "Bob" — BOTH changed! Same object in memory
-```
+
+console.log(obj1.name); // "Bob"
 
 **Memory Analogy**:
 - Value = Copy of house keys (independent)
@@ -341,8 +319,14 @@ console.log("undef" in clone);           // true ✓
 
 ## 13. Why does React care about object references?
 
-React uses **reference equality** (`===`) to decide whether to re-render a component.
+React relies heavily on object identity/reference equality when
+determining whether values have changed.
 
+For state updates, React uses Object.is-style comparison for
+bailouts, while memoized components also use prop comparisons.
+
+Therefore, mutating an existing state object and passing the same
+reference can prevent the update from being recognized as a change.
 When you pass an object as a prop or store it in state, React checks: "Is this the same reference as before?" — not "Does it have the same content?"
 
 ```javascript

@@ -9,15 +9,14 @@
 - [x] Day 05
 - [x] Day 06
 - [x] Day 07
-- [x] Day 08
-- [x] Day 09
+
 ---
 
 ## Week 2 - JavaScript Mastery 🚀
 
-- [ ] Day 08 - Debounce, Throttle, Currying, Memoization
-- [ ] Day 09 - Deep Copy, Shallow Copy, Object Methods
-- [ ] Day 10 - Advanced Polyfills
+- [x] Day 08 - Debounce, Throttle, Currying, Memoization
+- [x] Day 09 - Deep Copy, Shallow Copy, Object Methods
+- [x] Day 10 - Advanced Polyfills
 - [ ] Day 11 - JavaScript Coding Round
 - [ ] Day 12 - Machine Coding
 - [ ] Day 13 - Mock Interview

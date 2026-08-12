@@ -275,6 +275,7 @@ function greet(city) {
 }
 
 greet.call(person, "Hyderabad");
+op:// hello  sadhik from hyderabad
 
 call() lets you explicitly control this.
 
@@ -449,4 +450,4 @@ B
 C
 A
 but result: [A,B,C]
-*** mark imp above one
+*** mark imp above onel

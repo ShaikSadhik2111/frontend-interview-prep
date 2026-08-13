@@ -17,8 +17,8 @@
 - [x] Day 08 - Debounce, Throttle, Currying, Memoization
 - [x] Day 09 - Deep Copy, Shallow Copy, Object Methods
 - [x] Day 10 - Advanced Polyfills
-- [ ] Day 11 - JavaScript Coding Round
-- [ ] Day 12 - Machine Coding
+- [x] Day 11 - JavaScript Coding Round
+- [x] Day 12 - Machine Coding
 - [ ] Day 13 - Mock Interview
 - [ ] Day 14 - Final JavaScript Assessment
 

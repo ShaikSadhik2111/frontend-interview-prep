@@ -264,7 +264,7 @@ const isAnagram = (str1, str2) => {
     if(str1.length !== str2.length) {
         return false;
     }
-    const frequencyMap1 = {};
+    const frequencyMap1 = {};//
     const frequencyMap2 = {};
     for(let i = 0; i < str1.length; i++) {
         const char1 = str1[i];
@@ -414,7 +414,7 @@ const flattenArrayNormal = (arr) => {
     const flattenedArray = [];
     for(const item of arr) {
         if(Array.isArray(item)) {
-            flattenedArray.push(...flattenArrayNormal(item));
+            flattenedArray.push(...flattenArrayNormal(item));// ... this spread operator expands the elements of the array into individual elements, allowing them to be pushed into the flattenedArray.
         } else {
             flattenedArray.push(item);
         }

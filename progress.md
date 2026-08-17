@@ -19,8 +19,8 @@
 - [x] Day 10 - Advanced Polyfills
 - [x] Day 11 - JavaScript Coding Round
 - [x] Day 12 - Machine Coding
-- [ ] Day 13 - Mock Interview
-- [ ] Day 14 - Final JavaScript Assessment
+- [⏸️] Day 13 - Mock Interview
+- [⏸️] Day 14 - Final JavaScript Assessment
 
 ---
 

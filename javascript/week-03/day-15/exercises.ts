@@ -1,31 +1,16 @@
-//1. create a types function below one.
-// calculateTotal(
-//     price,
-//     quantity
-// )
-// price → number
-// quantity → number
-// return → number
-
+// 1. Typed function
 function calculateTotal(price: number, quantity: number): number {
     return price * quantity;
 }
 
-//2. create 
-//user 
-//with the following properties
-// id
-// name
-// email
-// age
-//then create two users by using object and interface
-//interface
-interface User {  
+// 2. User using interface
+interface User {
     id: number;
     name: string;
     email: string;
     age: number;
 }
+
 const user1: User = {
     id: 1,
     name: "Alice",
@@ -40,10 +25,9 @@ const user2: User = {
     age: 30
 };
 
-
-//object type
+// User using a type alias
 type UserObject = {
-    id: number; 
+    id: number;
     name: string;
     email: string;
     age: number;
@@ -52,42 +36,55 @@ type UserObject = {
 const user3: UserObject = {
     id: 3,
     name: "Charlie",
-    email: "123@gmail.com",
+    email: "789@gmail.com",
     age: 28
 };
 
-//3. create getStatusMessage(status)
-//where status can only be :
-// "loading"
-// "success"
-// "error"
-//Return an appropriate message.
+// 3. Literal union type
+type Status = "loading" | "success" | "error";
 
-type status = 'loading' | 'success' | 'error'
-function getStatusMessage(
-    variant: status
-) {}
-
-
-//4. type narrowing 
-function formatId(
-    id: number | string
-) {
-    if (typeof id === "string") {
-        console.log(id.toUpperCase());
-    } else {
-        console.log(id.toFixed(0));
+function getStatusMessage(status: Status): string {
+    switch (status) {
+        case "loading":
+            return "Loading...";
+        case "success":
+            return "Success!";
+        case "error":
+            return "Something went wrong.";
     }
 }
 
-//5. use unknown example
-function parseValue(value: unknown): string {
-  if (typeof value === 'string') {
-    return value.toUpperCase();
-  } else if (typeof value === 'number') {
-    return value.toFixed(0);
-  } else if (typeof value === 'boolean') {
-    return value ? 'true' : 'false';
-  }
-  return 'unsupported type';
+// 4. Type narrowing
+function formatId(id: number | string): string {
+    if (typeof id === "string") {
+        return `ID: ${id.toUpperCase()}`;
+    }
+
+    return `ID: ${id.toFixed(0)}`;
 }
+
+// 5. unknown example
+function parseValue(value: unknown): string {
+    if (typeof value === "string") {
+        return value.toUpperCase();
+    }
+
+    if (typeof value === "number") {
+        return value.toFixed(0);
+    }
+
+    if (typeof value === "boolean") {
+        return value ? "true" : "false";
+    }
+
+    return "unsupported type";
+}
+
+// Example calls
+console.log(calculateTotal(100, 2));
+console.log(getStatusMessage("loading"));
+console.log(formatId("abc"));
+console.log(formatId(123));
+console.log(parseValue("hello"));
+console.log(parseValue(42));
+console.log(parseValue(true));

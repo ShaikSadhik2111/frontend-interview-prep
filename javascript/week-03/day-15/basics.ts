@@ -7,7 +7,7 @@ const inferredActive = true;
 
 // Type annotations
 let age: number = 25;
-let name: string = "Sadhik";
+let userName: string = "Sadhik";
 let isActive: boolean = true;
 
 const numbers: number[] = [1, 2, 3];

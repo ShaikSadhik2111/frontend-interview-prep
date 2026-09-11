@@ -1,21 +1,38 @@
-# Day 17 Mistakes / Review Notes
+# TypeScript Day 18 Mistakes / Review Notes
 
-## 1. Invalid stray text
+## 1. Prefer inference when it is clear
 
-Avoid leaving plain English such as `usage,` directly inside a `.ts` file. It is parsed as code and causes a TypeScript error.
+The exercises sometimes explicitly supplied type arguments such as `getLastItem<number>(...)`. This is valid, but TypeScript can usually infer the type:
 
-## 2. Empty rest-parameter input
+```ts
+getLastItem([1, 2, 3]);
+```
 
-`calculateAverage()` would otherwise divide by zero and produce `NaN`. The exercise now explicitly returns `0` for an empty input.
+Use explicit generic arguments when they improve clarity or are actually needed.
 
-## 3. Function overload implementation
+## 2. Keep generic constraints precise
 
-Overload signatures describe the public call shapes. The implementation must accept all of those input types, so `string | number` is used internally.
+`T extends HasId` means the type itself must satisfy the `HasId` shape. It does not mean that `T` must literally be the `HasId` interface.
 
-## 4. Callback safety
+## 3. `K extends keyof T` constrains keys
 
-Optional callbacks should be invoked with optional chaining (`callback?.()`) or an equivalent guard.
+This is different from `T extends HasId`:
 
-## 5. Consistent formatting
+- `T extends HasId` constrains the object/type shape.
+- `K extends keyof T` constrains the property name.
 
-Use standard spacing around declarations and keep examples executable where practical. Learning notes can explain concepts, but `.ts` files should remain valid TypeScript.
+## 4. `T[K]` preserves the selected property type
+
+A generic property accessor should return `T[K]`, not a broad union such as `string | number`, because the return type should follow the key passed by the caller.
+
+## 5. Avoid `any` for reusable code
+
+A generic keeps the relationship between the input and output types. Replacing a generic with `any` loses that safety.
+
+## 6. Empty collections are an edge case
+
+Functions such as `getLastItem` should account for an empty array and return `undefined` when no item exists.
+
+## 7. Generic API response types do not validate runtime data
+
+`ApiResponse<User>` describes what the program expects at compile time. Data received from an external API still needs runtime validation when the source cannot be trusted.

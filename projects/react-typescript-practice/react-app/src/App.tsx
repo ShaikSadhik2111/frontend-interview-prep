@@ -1,6 +1,6 @@
-import './App.css'
-import UserCard from './components/UserCard/UserCard'
-import type { User } from './components/UserCard/UserCard'
+import "./App.css";
+import UserCard from "./components/UserCard/UserCard";
+import type { User } from "./components/UserCard/UserCard";
 
 export default function App() {
     const users: User[] = [
@@ -19,10 +19,18 @@ export default function App() {
             role: "Backend Engineer",
             skills: ["Python", "FastAPI"],
         },
+        {
+            id: 3,
+            name: "Alex",
+            email: "alex@example.com",
+            role: "Full Stack Engineer",
+            skills: [],
+            isOnline: false,
+        },
     ];
 
     return (
-        <main>
+        <main className="user-list">
             {users.map((user) => (
                 <UserCard key={user.id} user={user} />
             ))}

@@ -1,8 +1,13 @@
-interface User {
+export type UserRole =
+    | "Frontend Engineer"
+    | "Backend Engineer"
+    | "Full Stack Engineer";
+
+export interface User {
     id: number;
     name: string;
     email: string;
-    role: string;
+    role: UserRole;
     skills: string[];
     isOnline?: boolean;
 }
@@ -12,18 +17,26 @@ interface UserCardProps {
 }
 
 function UserCard({ user }: UserCardProps) {
+    const status = user.isOnline ? "Online" : "Offline";
+
     return (
-        <article>
-            <h2>{user.name}</h2>
+        <article aria-labelledby={`user-${user.id}`} className="user-card">
+            <h2 id={`user-${user.id}`}>{user.name}</h2>
             <p>{user.email}</p>
             <p>{user.role}</p>
-            <p>Status: {user.isOnline ? "Online" : "Offline"}</p>
+            <p>
+                Status: <strong>{status}</strong>
+            </p>
 
-            <ul>
-                {user.skills.map((skill) => (
-                    <li key={skill}>{skill}</li>
-                ))}
-            </ul>
+            {user.skills.length > 0 ? (
+                <ul aria-label={`${user.name}'s skills`}>
+                    {user.skills.map((skill) => (
+                        <li key={skill}>{skill}</li>
+                    ))}
+                </ul>
+            ) : (
+                <p>No skills added.</p>
+            )}
         </article>
     );
 }

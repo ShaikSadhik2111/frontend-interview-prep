@@ -1,3 +1,28 @@
+.user-list {
+  width: min(100% - 32px, 960px);
+  margin: 0 auto;
+  padding: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--social-bg);
+  box-shadow: var(--shadow);
+}
+
+.user-card h2 {
+  margin-top: 0;
+}
+
+.user-card ul {
+  margin-bottom: 0;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

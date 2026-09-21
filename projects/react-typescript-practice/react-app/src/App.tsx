@@ -1,6 +1,7 @@
 import "./App.css";
-import UserCard from "./components/UserCard/UserCard";
-import type { User } from "./components/UserCard/UserCard";
+import UserCard from "./day21/UserCard";
+import type { User } from "./day21/UserCard";
+import Counter from "./day22/Counter";
 
 export default function App() {
     const users: User[] = [
@@ -30,10 +31,13 @@ export default function App() {
     ];
 
     return (
-        <main className="user-list">
-            {users.map((user) => (
-                <UserCard key={user.id} user={user} />
-            ))}
-        </main>
+        // <main className="user-list">
+        //     {users.map((user) => (
+        //         <UserCard key={user.id} user={user} />
+        //     ))}
+        // </main>
+        <div>
+            <Counter />
+        </div>
     );
 }

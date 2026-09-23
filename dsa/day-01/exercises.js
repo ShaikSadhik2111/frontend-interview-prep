@@ -58,7 +58,7 @@ function secondLargestDistinct(numbers) {
   let secondLargest;
 
   for (const number of numbers) {
-    if (number === largest) continue;
+    if (number === largest) continue;// skips iteration
 
     if (largest === undefined || number > largest) {
       secondLargest = largest;

@@ -1,12 +1,20 @@
-// Big-O examples
+// DSA Day 1 — Big-O + Array Fundamentals
 
-// O(1): fixed number of operations
+// ------------------------------------------------------------
+// 1. O(1) — constant time
+// ------------------------------------------------------------
+// The number of operations does not grow with input length.
 function firstItem(numbers) {
   return numbers[0];
 }
 
-// O(n): one traversal
+// ------------------------------------------------------------
+// 2. O(n) — linear time
+// ------------------------------------------------------------
+// One traversal of n elements.
 function findMax(numbers) {
+  if (numbers.length === 0) return undefined;
+
   let max = numbers[0];
 
   for (const number of numbers) {
@@ -16,7 +24,10 @@ function findMax(numbers) {
   return max;
 }
 
-// O(n^2): nested traversal
+// ------------------------------------------------------------
+// 3. O(n²) — quadratic time
+// ------------------------------------------------------------
+// For every element, scan the whole array again.
 function printPairs(numbers) {
   for (let i = 0; i < numbers.length; i += 1) {
     for (let j = 0; j < numbers.length; j += 1) {
@@ -25,15 +36,22 @@ function printPairs(numbers) {
   }
 }
 
-// Array traversal
+// ------------------------------------------------------------
+// 4. Linear search — O(n)
+// ------------------------------------------------------------
 function contains(numbers, target) {
   for (const number of numbers) {
     if (number === target) return true;
   }
+
   return false;
 }
 
-// Frequency counting: O(n) time, O(n) space in the worst case.
+// ------------------------------------------------------------
+// 5. Frequency map — O(n) average time, O(k) space
+// ------------------------------------------------------------
+// k = number of distinct values.
+// Map lookup/set is expected O(1) on average.
 function frequencyMap(values) {
   const counts = new Map();
 
@@ -43,3 +61,10 @@ function frequencyMap(values) {
 
   return counts;
 }
+
+// Interview habit:
+// Always distinguish:
+// - input size: n
+// - number of distinct values: k
+// - time complexity
+// - auxiliary space

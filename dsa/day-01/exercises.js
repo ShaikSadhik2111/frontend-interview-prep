@@ -1,15 +1,11 @@
-// DSA Day 1 exercises
+// DSA Day 1 — Exercises + Reference Solutions
 //
-// Try each problem before looking at the reference solution below.
+// IMPORTANT:
+// Attempt each problem first.
+// The solutions below are the reference implementation.
 //
-// 1. findMax(numbers)
-// 2. findMin(numbers)
-// 3. reverseArray(numbers)
-// 4. contains(numbers, target)
-// 5. secondLargestDistinct(numbers)
-// 6. frequencyMap(values)
-//
-// Reference solutions:
+// Interview habit:
+// input -> edge cases -> approach -> code -> dry run -> complexity
 
 function findMax(numbers) {
   if (numbers.length === 0) return undefined;
@@ -35,6 +31,9 @@ function findMin(numbers) {
   return min;
 }
 
+// Returns a new reversed array.
+// Time: O(n)
+// Auxiliary space: O(n)
 function reverseArray(numbers) {
   const result = [];
 
@@ -45,6 +44,8 @@ function reverseArray(numbers) {
   return result;
 }
 
+// Time: O(n)
+// Auxiliary space: O(1)
 function contains(numbers, target) {
   for (const number of numbers) {
     if (number === target) return true;
@@ -53,12 +54,15 @@ function contains(numbers, target) {
   return false;
 }
 
+// One-pass distinct second-largest solution.
+// Time: O(n)
+// Auxiliary space: O(1)
 function secondLargestDistinct(numbers) {
   let largest;
   let secondLargest;
 
   for (const number of numbers) {
-    if (number === largest) continue;// skips iteration
+    if (number === largest) continue;
 
     if (largest === undefined || number > largest) {
       secondLargest = largest;
@@ -74,6 +78,8 @@ function secondLargestDistinct(numbers) {
   return secondLargest;
 }
 
+// Time: O(n) expected
+// Auxiliary space: O(k), where k is the number of distinct values.
 function frequencyMap(values) {
   const counts = new Map();
 

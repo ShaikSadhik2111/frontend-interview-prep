@@ -4,7 +4,7 @@
 // Time: O(n)
 // Auxiliary space: O(k), where k = number of distinct characters.
 function characterFrequency(text) {
-  const counts = new Map();
+  const counts = new Map();//Map has a collection of key-value pairs
 
   for (const character of text) {
     counts.set(character, (counts.get(character) ?? 0) + 1);
@@ -17,6 +17,7 @@ function characterFrequency(text) {
 // Same frequency for every character => anagrams.
 // Time: O(n + m)
 // Auxiliary space: O(k)
+//pattern: use a frequency map to count characters in the first string, then decrement counts while checking the second string.
 function areAnagrams(first, second) {
   if (first.length !== second.length) return false;
 
@@ -38,7 +39,7 @@ function areAnagrams(first, second) {
     }
   }
 
-  return counts.size === 0;
+  return counts.size === 0; 
 }
 
 // 3. Duplicate detection

@@ -8,14 +8,15 @@ function removeDuplicatesSorted(numbers) {
 }
 
 function reverseInPlace(values) {
+  const reversed = [...values];
   let left = 0;
-  let right = values.length - 1;
+  let right = reversed.length - 1;
   while (left < right) {
-    [values[left], values[right]] = [values[right], values[left]];
+    [reversed[left], reversed[right]] = [reversed[right], reversed[left]];
     left++;
     right--;
   }
-  return values;
+  return typeof values === 'string' ? reversed.join('') : reversed;
 }
 
 function hasPairWithTargetSorted(numbers, target) {

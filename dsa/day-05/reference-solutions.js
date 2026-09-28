@@ -1,0 +1,4 @@
+function longestUniqueSubstring(s){const last=new Map();let left=0,best=0;for(let right=0;right<s.length;right++){const c=s[right];if(last.has(c)&&last.get(c)>=left)left=last.get(c)+1;last.set(c,right);best=Math.max(best,right-left+1)}return best}
+function longestAtMostKDistinct(s,k){const count=new Map();let left=0,best=0;for(let right=0;right<s.length;right++){count.set(s[right],(count.get(s[right])||0)+1);while(count.size>k){const c=s[left++];count.set(c,count.get(c)-1);if(count.get(c)===0)count.delete(c)}best=Math.max(best,right-left+1)}return best}
+function longestOnes(nums,k){let left=0,zeros=0,best=0;for(let right=0;right<nums.length;right++){if(nums[right]===0)zeros++;while(zeros>k)if(nums[left++]===0)zeros--;best=Math.max(best,right-left+1)}return best}
+module.exports={longestUniqueSubstring,longestAtMostKDistinct,longestOnes};

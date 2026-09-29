@@ -1,74 +1,103 @@
-# Progress Tracker
+# 90-Day Progress Tracker
 
-## Week 1 - JavaScript Foundation ✅
+Status: [x] completed, [▶️] current, [ ] planned, [⏸️] revisit/assessment.
 
-- [x] Day 01
-- [x] Day 02
-- [x] Day 03
-- [x] Day 04
-- [x] Day 05
-- [x] Day 06
-- [x] Day 07
+## Days 1–20 — JavaScript
+- [x] Days 01–07 — JavaScript Foundation
+- [x] Days 08–12 — Advanced JavaScript / Coding / Machine Coding
+- [⏸️] Days 13–14 — Mock Interview / Final Assessment
+- [x] Days 15–20 — JavaScript Interview Mastery
 
----
+## Days 21–35 — React Core
+- [x] Day 21 — React Fundamentals
+- [x] Day 22 — Components, Props and State
+- [x] Day 23 — Hooks Fundamentals
+- [x] Day 24 — useRef
+- [x] Day 25 — Context API
+- [x] Day 26 — useReducer
+- [x] Day 27 — Performance + Memoization
+- [▶️] Day 28 — useEffect Deep Dive
+- [ ] Day 29 — Forms + Controlled/Uncontrolled
+- [ ] Day 30 — React Hook Form + Validation
+- [ ] Day 31 — React Router
+- [ ] Day 32 — API Integration + Data Fetching
+- [ ] Day 33 — TanStack Query + Server State
+- [ ] Day 34 — State Management Architecture
+- [ ] Day 35 — React Core Assessment
 
-## Week 2 - JavaScript Mastery 🚀
+## Days 36–45 — Advanced React + TypeScript
+- [ ] Day 36 — TypeScript Fundamentals
+- [ ] Day 37 — Advanced TypeScript
+- [ ] Day 38 — Generics + Utility Types
+- [ ] Day 39 — TypeScript with React
+- [ ] Day 40 — Advanced Hooks
+- [ ] Day 41 — Custom Hooks Architecture
+- [ ] Day 42 — Rendering + Reconciliation
+- [ ] Day 43 — Suspense + Concurrent Rendering
+- [ ] Day 44 — Error Boundaries + Code Splitting
+- [ ] Day 45 — Advanced React Assessment
 
-- [x] Day 08 - Debounce, Throttle, Currying, Memoization
-- [x] Day 09 - Deep Copy, Shallow Copy, Object Methods
-- [x] Day 10 - Advanced Polyfills
-- [x] Day 11 - JavaScript Coding Round
-- [x] Day 12 - Machine Coding
-- [⏸️] Day 13 - Mock Interview
-- [⏸️] Day 14 - Final JavaScript Assessment
+## Days 46–52 — Web Platform
+- [ ] Day 46 — HTML Deep Dive
+- [ ] Day 47 — CSS Fundamentals + Layout
+- [ ] Day 48 — Advanced CSS + Responsive Design
+- [ ] Day 49 — SCSS + Tailwind + Bootstrap
+- [ ] Day 50 — Accessibility
+- [ ] Day 51 — Browser Internals
+- [ ] Day 52 — Web Performance + Security
 
----
+## Days 53–60 — Machine Coding
+- [ ] Day 53 — Framework
+- [ ] Day 54 — Search/Filter/Sort
+- [ ] Day 55 — Pagination/Infinite Scroll
+- [ ] Day 56 — Debounced Autocomplete
+- [ ] Day 57 — Multi-Step Form
+- [ ] Day 58 — Data Table
+- [ ] Day 59 — Kanban/Drag & Drop
+- [ ] Day 60 — Full Assessment
 
-## Week 3
+## Days 61–68 — Frontend System Design
+- [ ] Day 61 — Fundamentals
+- [ ] Day 62 — Frontend Architecture
+- [ ] Day 63 — State Architecture
+- [ ] Day 64 — API/Data Architecture
+- [ ] Day 65 — Performance Architecture
+- [ ] Day 66 — Scalability/Micro-frontends
+- [ ] Day 67 — Design Systems
+- [ ] Day 68 — Full System Design Interview
 
-- [ ] TypeScript
+## Days 69–78 — Production Project
+- [ ] Day 69 — Architecture + Requirements
+- [ ] Day 70 — React + TypeScript Foundation
+- [ ] Day 71 — Backend/API Integration
+- [ ] Day 72 — Excel Processing + Data Layer
+- [ ] Day 73 — Authentication + Authorization
+- [ ] Day 74 — Tables/Filters/Pagination + UX States
+- [ ] Day 75 — AI Integration
+- [ ] Day 76 — RAG where justified
+- [ ] Day 77 — Testing/Performance/Accessibility/Security
+- [ ] Day 78 — Docker/CI/CD/Documentation/Demo
 
-## Week 4
+## Days 79–85 — Career + Interview
+- [ ] Day 79 — Resume
+- [ ] Day 80 — GitHub Portfolio
+- [ ] Day 81 — Project Storytelling
+- [ ] Day 82 — Frontend Interview Questions
+- [ ] Day 83 — Behavioral/HR
+- [ ] Day 84 — Company-Specific Preparation
+- [ ] Day 85 — Full Interview Simulation
 
-- [ ] React Core
+## Days 86–90 — Final Sprint
+- [ ] Day 86 — JavaScript Mock
+- [ ] Day 87 — React + TypeScript Mock
+- [ ] Day 88 — DSA + Machine Coding Mock
+- [ ] Day 89 — System Design Mock
+- [ ] Day 90 — Full Interview + Final Revision
 
-## Week 5
+## Parallel Tracks
+- DSA continues throughout the 90 days.
+- AI continues throughout the 90 days.
+- Practical/project work continues throughout the 90 days.
 
-- [ ] React Advanced
-
-## Week 6
-
-- [ ] HTML
-- [ ] CSS
-- [ ] SCSS
-- [ ] Tailwind CSS
-- [ ] Bootstrap
-- [ ] Responsive Design
-
-## Week 7
-
-- [ ] Browser Internals
-
-## Week 8
-
-- [ ] Machine Coding
-
-## Week 9
-
-- [ ] Frontend System Design
-
-## Week 10
-
-- [ ] Production Projects
-
-## Week 11
-
-- [ ] Resume
-
-- [ ] GitHub Portfolio
-
-- [ ] Mock Interviews
-
-## Week 12
-
-- [ ] Apply Product Companies
+## Daily Rule
+The active day should include theory, examples, exercises, reference solutions, interview questions with direct answers, revision, mistakes, practical application and a progress update where applicable.

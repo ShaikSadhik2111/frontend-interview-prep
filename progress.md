@@ -95,6 +95,9 @@ Status: [x] completed, [▶️] current, [ ] planned, [⏸️] revisit/assessmen
 - [ ] Day 90 — Full Interview + Final Revision
 
 ## Parallel Tracks
+- [▶️] DSA — Day 06: Stack and Queue Fundamentals
+- [▶️] AI — Day 06: Tool Calling and Agentic Workflows
+- [▶️] Practical Project — Day 28: Effect Audit + Tool-Calling Architecture
 - DSA continues throughout the 90 days.
 - AI continues throughout the 90 days.
 - Practical/project work continues throughout the 90 days.
